@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (5.6.1)
+  - HCVimeoVideoExtractor (0.0.1)
+  - Kingfisher (7.2.1)
+  - RxSwift (6.5.0)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - HCVimeoVideoExtractor
+  - Kingfisher
+  - RxSwift
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - HCVimeoVideoExtractor
+    - Kingfisher
+    - RxSwift
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  HCVimeoVideoExtractor: d3c251280f7027ffd324266e1930b3618e0adb46
+  Kingfisher: 7c084bebf7d548c623ad41bcf765fb200efed369
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: b99031fee233555d6974144972c79fcdf6f5f574
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		067ABD39D5BB2D6352476305 /* Pods_namava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39214019A88A73156E13C5D0 /* Pods_namava.framework */; };
+		301A6CA08808D9E4885873D3 /* Pods_namava_namavaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2712A1B10DA6BF2460DCF623 /* Pods_namava_namavaUITests.framework */; };
+		8E50A805802072E0E4DAAEBC /* Pods_namavaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469F52B80418936130EEAA89 /* Pods_namavaTests.framework */; };
+		D41CBC9628608231001337B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CBC9528608231001337B8 /* AppDelegate.swift */; };
+		D41CBC9828608231001337B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CBC9728608231001337B8 /* SceneDelegate.swift */; };
+		D41CBC9F28608232001337B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41CBC9E28608232001337B8 /* Assets.xcassets */; };
+		D41CBCA228608232001337B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41CBCA028608232001337B8 /* LaunchScreen.storyboard */; };
+		D41CBCAD28608232001337B8 /* namavaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CBCAC28608232001337B8 /* namavaTests.swift */; };
+		D41CBCB728608232001337B8 /* namavaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CBCB628608232001337B8 /* namavaUITests.swift */; };
+		D41CBCB928608232001337B8 /* namavaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CBCB828608232001337B8 /* namavaUITestsLaunchTests.swift */; };
+		D41CBCC82860B185001337B8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CBCC72860B185001337B8 /* Coordinator.swift */; };
+		D41CBCCD2860B2EC001337B8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CBCCC2860B2EC001337B8 /* AppCoordinator.swift */; };
+		D41CBCD12860B359001337B8 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CBCD02860B359001337B8 /* HomeCoordinator.swift */; };
+		D41CBCD32860B438001337B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CBCD22860B438001337B8 /* HomeViewController.swift */; };
+		D41CBCD52860B45F001337B8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CBCD42860B45F001337B8 /* HomeViewModel.swift */; };
+		D41CBCD82860BA7D001337B8 /* EndpointOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CBCD72860BA7D001337B8 /* EndpointOption.swift */; };
+		D41CBCDA2860BAAE001337B8 /* EndpointRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CBCD92860BAAE001337B8 /* EndpointRoute.swift */; };
+		D41CBCDC2860BABF001337B8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CBCDB2860BABF001337B8 /* NetworkManager.swift */; };
+		D41CBCDF2860E52C001337B8 /* VideoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CBCDE2860E52C001337B8 /* VideoList.swift */; };
+		D41CBCE22860ED37001337B8 /* VideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CBCE12860ED37001337B8 /* VideoListView.swift */; };
+		D41CBCE42860F918001337B8 /* NetworkImageMannager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CBCE32860F918001337B8 /* NetworkImageMannager.swift */; };
+		D437206228FC993000F288B3 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = D437206128FC993000F288B3 /* Env.swift */; };
+		D437206428FC9AA400F288B3 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D437206328FC9AA400F288B3 /* AccessToken.swift */; };
+		D437206628FCAA4C00F288B3 /* CaseIterableDefaultsLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D437206528FCAA4C00F288B3 /* CaseIterableDefaultsLast.swift */; };
+		D437207128FCB5B500F288B3 /* VideoDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D437206C28FCB5B500F288B3 /* VideoDetailModel.swift */; };
+		D437207228FCB5B500F288B3 /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D437206E28FCB5B500F288B3 /* VideoDetailView.swift */; };
+		D437207328FCB5B500F288B3 /* VideoDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D437206F28FCB5B500F288B3 /* VideoDetailCoordinator.swift */; };
+		D437207428FCB5B500F288B3 /* VideoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D437207028FCB5B500F288B3 /* VideoDetailController.swift */; };
+		D4503E4328FCD33D00F43DD6 /* IconDescView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4503E4228FCD33D00F43DD6 /* IconDescView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D41CBCA928608232001337B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41CBC8A28608231001337B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D41CBC9128608231001337B8;
+			remoteInfo = straiberry;
+		};
+		D41CBCB328608232001337B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41CBC8A28608231001337B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D41CBC9128608231001337B8;
+			remoteInfo = straiberry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01C8D83E927D230ED062631D /* Pods-namavaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-namavaTests.debug.xcconfig"; path = "Target Support Files/Pods-namavaTests/Pods-namavaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		059D12E464E5D7D23E6A3759 /* Pods-straiberryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-straiberryTests.debug.xcconfig"; path = "Target Support Files/Pods-straiberryTests/Pods-straiberryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2712A1B10DA6BF2460DCF623 /* Pods_namava_namavaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_namava_namavaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE3375250A664B7CE95DA47 /* Pods-namava.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-namava.release.xcconfig"; path = "Target Support Files/Pods-namava/Pods-namava.release.xcconfig"; sourceTree = "<group>"; };
+		2F3C77A4F8F56B91F6D9BB78 /* Pods-namavaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-namavaTests.release.xcconfig"; path = "Target Support Files/Pods-namavaTests/Pods-namavaTests.release.xcconfig"; sourceTree = "<group>"; };
+		39214019A88A73156E13C5D0 /* Pods_namava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_namava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		469F52B80418936130EEAA89 /* Pods_namavaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_namavaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		485C8ADF771CDF27FFB66FEA /* Pods-namava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-namava.debug.xcconfig"; path = "Target Support Files/Pods-namava/Pods-namava.debug.xcconfig"; sourceTree = "<group>"; };
+		4AFDDD930976253D21E8A969 /* Pods-straiberry-straiberryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-straiberry-straiberryUITests.release.xcconfig"; path = "Target Support Files/Pods-straiberry-straiberryUITests/Pods-straiberry-straiberryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6621F519A7B671F52A08234B /* Pods-straiberry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-straiberry.debug.xcconfig"; path = "Target Support Files/Pods-straiberry/Pods-straiberry.debug.xcconfig"; sourceTree = "<group>"; };
+		A409A23D789B49BE1E785101 /* Pods-namava-namavaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-namava-namavaUITests.debug.xcconfig"; path = "Target Support Files/Pods-namava-namavaUITests/Pods-namava-namavaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A50ED68F20E5680571AE8E01 /* Pods-straiberryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-straiberryTests.release.xcconfig"; path = "Target Support Files/Pods-straiberryTests/Pods-straiberryTests.release.xcconfig"; sourceTree = "<group>"; };
+		D41CBC9228608231001337B8 /* namava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = namava.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41CBC9528608231001337B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D41CBC9728608231001337B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D41CBC9E28608232001337B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D41CBCA128608232001337B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D41CBCA328608232001337B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41CBCA828608232001337B8 /* namavaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = namavaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41CBCAC28608232001337B8 /* namavaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = namavaTests.swift; sourceTree = "<group>"; };
+		D41CBCB228608232001337B8 /* namavaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = namavaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41CBCB628608232001337B8 /* namavaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = namavaUITests.swift; sourceTree = "<group>"; };
+		D41CBCB828608232001337B8 /* namavaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = namavaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D41CBCC72860B185001337B8 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		D41CBCCC2860B2EC001337B8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		D41CBCD02860B359001337B8 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		D41CBCD22860B438001337B8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D41CBCD42860B45F001337B8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D41CBCD72860BA7D001337B8 /* EndpointOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointOption.swift; sourceTree = "<group>"; };
+		D41CBCD92860BAAE001337B8 /* EndpointRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointRoute.swift; sourceTree = "<group>"; };
+		D41CBCDB2860BABF001337B8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D41CBCDE2860E52C001337B8 /* VideoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoList.swift; sourceTree = "<group>"; };
+		D41CBCE12860ED37001337B8 /* VideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListView.swift; sourceTree = "<group>"; };
+		D41CBCE32860F918001337B8 /* NetworkImageMannager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageMannager.swift; sourceTree = "<group>"; };
+		D437206128FC993000F288B3 /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		D437206328FC9AA400F288B3 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		D437206528FCAA4C00F288B3 /* CaseIterableDefaultsLast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseIterableDefaultsLast.swift; sourceTree = "<group>"; };
+		D437206C28FCB5B500F288B3 /* VideoDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDetailModel.swift; sourceTree = "<group>"; };
+		D437206E28FCB5B500F288B3 /* VideoDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
+		D437206F28FCB5B500F288B3 /* VideoDetailCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDetailCoordinator.swift; sourceTree = "<group>"; };
+		D437207028FCB5B500F288B3 /* VideoDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDetailController.swift; sourceTree = "<group>"; };
+		D4503E4228FCD33D00F43DD6 /* IconDescView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconDescView.swift; sourceTree = "<group>"; };
+		DA7AA099CA80721037F67D04 /* Pods-namava-namavaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-namava-namavaUITests.release.xcconfig"; path = "Target Support Files/Pods-namava-namavaUITests/Pods-namava-namavaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EAE9C8D08C1D2ABDA9C27DDA /* Pods-straiberry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-straiberry.release.xcconfig"; path = "Target Support Files/Pods-straiberry/Pods-straiberry.release.xcconfig"; sourceTree = "<group>"; };
+		F69F55B7D98E7C72A2E2D4A2 /* Pods-straiberry-straiberryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-straiberry-straiberryUITests.debug.xcconfig"; path = "Target Support Files/Pods-straiberry-straiberryUITests/Pods-straiberry-straiberryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D41CBC8F28608231001337B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				067ABD39D5BB2D6352476305 /* Pods_namava.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D41CBCA528608232001337B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E50A805802072E0E4DAAEBC /* Pods_namavaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D41CBCAF28608232001337B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301A6CA08808D9E4885873D3 /* Pods_namava_namavaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A1DC2BB3C72C996D6F3CDF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39214019A88A73156E13C5D0 /* Pods_namava.framework */,
+				2712A1B10DA6BF2460DCF623 /* Pods_namava_namavaUITests.framework */,
+				469F52B80418936130EEAA89 /* Pods_namavaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D41CBC8928608231001337B8 = {
+			isa = PBXGroup;
+			children = (
+				D41CBC9428608231001337B8 /* namava */,
+				D41CBCAB28608232001337B8 /* namavaTests */,
+				D41CBCB528608232001337B8 /* namavaUITests */,
+				D41CBC9328608231001337B8 /* Products */,
+				DCA271A1861D683CA33ED501 /* Pods */,
+				0A1DC2BB3C72C996D6F3CDF6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D41CBC9328608231001337B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D41CBC9228608231001337B8 /* namava.app */,
+				D41CBCA828608232001337B8 /* namavaTests.xctest */,
+				D41CBCB228608232001337B8 /* namavaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D41CBC9428608231001337B8 /* namava */ = {
+			isa = PBXGroup;
+			children = (
+				D41CBCC92860B2D1001337B8 /* Application */,
+				D41CBCC52860B16C001337B8 /* UI */,
+				D41CBC9E28608232001337B8 /* Assets.xcassets */,
+				D41CBCA028608232001337B8 /* LaunchScreen.storyboard */,
+				D41CBCA328608232001337B8 /* Info.plist */,
+			);
+			path = namava;
+			sourceTree = "<group>";
+		};
+		D41CBCAB28608232001337B8 /* namavaTests */ = {
+			isa = PBXGroup;
+			children = (
+				D41CBCAC28608232001337B8 /* namavaTests.swift */,
+			);
+			path = namavaTests;
+			sourceTree = "<group>";
+		};
+		D41CBCB528608232001337B8 /* namavaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D41CBCB628608232001337B8 /* namavaUITests.swift */,
+				D41CBCB828608232001337B8 /* namavaUITestsLaunchTests.swift */,
+			);
+			path = namavaUITests;
+			sourceTree = "<group>";
+		};
+		D41CBCC52860B16C001337B8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D41CBCCE2860B341001337B8 /* Sence */,
+				D41CBCDD2860E51D001337B8 /* Models */,
+				D41CBCC62860B17A001337B8 /* Base */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D41CBCC62860B17A001337B8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D41CBCC72860B185001337B8 /* Coordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D41CBCC92860B2D1001337B8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D41CBCD62860BA6F001337B8 /* NetworkManager */,
+				D41CBC9528608231001337B8 /* AppDelegate.swift */,
+				D41CBC9728608231001337B8 /* SceneDelegate.swift */,
+				D41CBCCA2860B2DA001337B8 /* Navigation */,
+				D437206128FC993000F288B3 /* Env.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D41CBCCA2860B2DA001337B8 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				D41CBCCB2860B2E6001337B8 /* Coordinator */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		D41CBCCB2860B2E6001337B8 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				D41CBCCC2860B2EC001337B8 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		D41CBCCE2860B341001337B8 /* Sence */ = {
+			isa = PBXGroup;
+			children = (
+				D437206B28FCB5B500F288B3 /* VideoDetail */,
+				D41CBCCF2860B34D001337B8 /* Home */,
+			);
+			path = Sence;
+			sourceTree = "<group>";
+		};
+		D41CBCCF2860B34D001337B8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D41CBCE02860ED29001337B8 /* view */,
+				D41CBCD02860B359001337B8 /* HomeCoordinator.swift */,
+				D41CBCD22860B438001337B8 /* HomeViewController.swift */,
+				D41CBCD42860B45F001337B8 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D41CBCD62860BA6F001337B8 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				D41CBCD72860BA7D001337B8 /* EndpointOption.swift */,
+				D41CBCD92860BAAE001337B8 /* EndpointRoute.swift */,
+				D41CBCDB2860BABF001337B8 /* NetworkManager.swift */,
+				D41CBCE32860F918001337B8 /* NetworkImageMannager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		D41CBCDD2860E51D001337B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D41CBCDE2860E52C001337B8 /* VideoList.swift */,
+				D437206328FC9AA400F288B3 /* AccessToken.swift */,
+				D437206528FCAA4C00F288B3 /* CaseIterableDefaultsLast.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D41CBCE02860ED29001337B8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D41CBCE12860ED37001337B8 /* VideoListView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D437206B28FCB5B500F288B3 /* VideoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D437206D28FCB5B500F288B3 /* view */,
+				D437206C28FCB5B500F288B3 /* VideoDetailModel.swift */,
+				D437206F28FCB5B500F288B3 /* VideoDetailCoordinator.swift */,
+				D437207028FCB5B500F288B3 /* VideoDetailController.swift */,
+			);
+			path = VideoDetail;
+			sourceTree = "<group>";
+		};
+		D437206D28FCB5B500F288B3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D437206E28FCB5B500F288B3 /* VideoDetailView.swift */,
+				D4503E4228FCD33D00F43DD6 /* IconDescView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		DCA271A1861D683CA33ED501 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6621F519A7B671F52A08234B /* Pods-straiberry.debug.xcconfig */,
+				EAE9C8D08C1D2ABDA9C27DDA /* Pods-straiberry.release.xcconfig */,
+				F69F55B7D98E7C72A2E2D4A2 /* Pods-straiberry-straiberryUITests.debug.xcconfig */,
+				4AFDDD930976253D21E8A969 /* Pods-straiberry-straiberryUITests.release.xcconfig */,
+				059D12E464E5D7D23E6A3759 /* Pods-straiberryTests.debug.xcconfig */,
+				A50ED68F20E5680571AE8E01 /* Pods-straiberryTests.release.xcconfig */,
+				485C8ADF771CDF27FFB66FEA /* Pods-namava.debug.xcconfig */,
+				2CE3375250A664B7CE95DA47 /* Pods-namava.release.xcconfig */,
+				A409A23D789B49BE1E785101 /* Pods-namava-namavaUITests.debug.xcconfig */,
+				DA7AA099CA80721037F67D04 /* Pods-namava-namavaUITests.release.xcconfig */,
+				01C8D83E927D230ED062631D /* Pods-namavaTests.debug.xcconfig */,
+				2F3C77A4F8F56B91F6D9BB78 /* Pods-namavaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D41CBC9128608231001337B8 /* namava */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D41CBCBC28608232001337B8 /* Build configuration list for PBXNativeTarget "namava" */;
+			buildPhases = (
+				BD6A2714C1A1DC718FE01468 /* [CP] Check Pods Manifest.lock */,
+				D41CBC8E28608231001337B8 /* Sources */,
+				D41CBC8F28608231001337B8 /* Frameworks */,
+				D41CBC9028608231001337B8 /* Resources */,
+				02DDBF691F7C4856B7BF92F4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = namava;
+			productName = straiberry;
+			productReference = D41CBC9228608231001337B8 /* namava.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D41CBCA728608232001337B8 /* namavaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D41CBCBF28608232001337B8 /* Build configuration list for PBXNativeTarget "namavaTests" */;
+			buildPhases = (
+				06EB14CD9B182996D7CDA8AB /* [CP] Check Pods Manifest.lock */,
+				D41CBCA428608232001337B8 /* Sources */,
+				D41CBCA528608232001337B8 /* Frameworks */,
+				D41CBCA628608232001337B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D41CBCAA28608232001337B8 /* PBXTargetDependency */,
+			);
+			name = namavaTests;
+			productName = straiberryTests;
+			productReference = D41CBCA828608232001337B8 /* namavaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D41CBCB128608232001337B8 /* namavaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D41CBCC228608232001337B8 /* Build configuration list for PBXNativeTarget "namavaUITests" */;
+			buildPhases = (
+				B3838BBF5FD5DA1CD0325BAD /* [CP] Check Pods Manifest.lock */,
+				D41CBCAE28608232001337B8 /* Sources */,
+				D41CBCAF28608232001337B8 /* Frameworks */,
+				D41CBCB028608232001337B8 /* Resources */,
+				C720273456CAE827CED097E4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D41CBCB428608232001337B8 /* PBXTargetDependency */,
+			);
+			name = namavaUITests;
+			productName = straiberryUITests;
+			productReference = D41CBCB228608232001337B8 /* namavaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41CBC8A28608231001337B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					D41CBC9128608231001337B8 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					D41CBCA728608232001337B8 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = D41CBC9128608231001337B8;
+					};
+					D41CBCB128608232001337B8 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = D41CBC9128608231001337B8;
+					};
+				};
+			};
+			buildConfigurationList = D41CBC8D28608231001337B8 /* Build configuration list for PBXProject "namava" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D41CBC8928608231001337B8;
+			productRefGroup = D41CBC9328608231001337B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D41CBC9128608231001337B8 /* namava */,
+				D41CBCA728608232001337B8 /* namavaTests */,
+				D41CBCB128608232001337B8 /* namavaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D41CBC9028608231001337B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41CBCA228608232001337B8 /* LaunchScreen.storyboard in Resources */,
+				D41CBC9F28608232001337B8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D41CBCA628608232001337B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D41CBCB028608232001337B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02DDBF691F7C4856B7BF92F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-namava/Pods-namava-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-namava/Pods-namava-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-namava/Pods-namava-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		06EB14CD9B182996D7CDA8AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-namavaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3838BBF5FD5DA1CD0325BAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-namava-namavaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD6A2714C1A1DC718FE01468 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-namava-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C720273456CAE827CED097E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-namava-namavaUITests/Pods-namava-namavaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-namava-namavaUITests/Pods-namava-namavaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-namava-namavaUITests/Pods-namava-namavaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D41CBC8E28608231001337B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41CBCDF2860E52C001337B8 /* VideoList.swift in Sources */,
+				D41CBCE42860F918001337B8 /* NetworkImageMannager.swift in Sources */,
+				D437207328FCB5B500F288B3 /* VideoDetailCoordinator.swift in Sources */,
+				D41CBCCD2860B2EC001337B8 /* AppCoordinator.swift in Sources */,
+				D41CBCD12860B359001337B8 /* HomeCoordinator.swift in Sources */,
+				D437207128FCB5B500F288B3 /* VideoDetailModel.swift in Sources */,
+				D41CBCDC2860BABF001337B8 /* NetworkManager.swift in Sources */,
+				D41CBCD52860B45F001337B8 /* HomeViewModel.swift in Sources */,
+				D41CBCC82860B185001337B8 /* Coordinator.swift in Sources */,
+				D41CBC9628608231001337B8 /* AppDelegate.swift in Sources */,
+				D437206628FCAA4C00F288B3 /* CaseIterableDefaultsLast.swift in Sources */,
+				D41CBCDA2860BAAE001337B8 /* EndpointRoute.swift in Sources */,
+				D4503E4328FCD33D00F43DD6 /* IconDescView.swift in Sources */,
+				D437207428FCB5B500F288B3 /* VideoDetailController.swift in Sources */,
+				D41CBCE22860ED37001337B8 /* VideoListView.swift in Sources */,
+				D41CBCD82860BA7D001337B8 /* EndpointOption.swift in Sources */,
+				D437207228FCB5B500F288B3 /* VideoDetailView.swift in Sources */,
+				D41CBCD32860B438001337B8 /* HomeViewController.swift in Sources */,
+				D41CBC9828608231001337B8 /* SceneDelegate.swift in Sources */,
+				D437206228FC993000F288B3 /* Env.swift in Sources */,
+				D437206428FC9AA400F288B3 /* AccessToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D41CBCA428608232001337B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41CBCAD28608232001337B8 /* namavaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D41CBCAE28608232001337B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41CBCB728608232001337B8 /* namavaUITests.swift in Sources */,
+				D41CBCB928608232001337B8 /* namavaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D41CBCAA28608232001337B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D41CBC9128608231001337B8 /* namava */;
+			targetProxy = D41CBCA928608232001337B8 /* PBXContainerItemProxy */;
+		};
+		D41CBCB428608232001337B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D41CBC9128608231001337B8 /* namava */;
+			targetProxy = D41CBCB328608232001337B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D41CBCA028608232001337B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D41CBCA128608232001337B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D41CBCBA28608232001337B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D41CBCBB28608232001337B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D41CBCBD28608232001337B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 485C8ADF771CDF27FFB66FEA /* Pods-namava.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8BYSYKW73;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = namava/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.namava;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D41CBCBE28608232001337B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CE3375250A664B7CE95DA47 /* Pods-namava.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8BYSYKW73;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = namava/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.namava;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D41CBCC028608232001337B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01C8D83E927D230ED062631D /* Pods-namavaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8BYSYKW73;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.namavaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/namava.app/namava";
+			};
+			name = Debug;
+		};
+		D41CBCC128608232001337B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F3C77A4F8F56B91F6D9BB78 /* Pods-namavaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8BYSYKW73;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.namavaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/namava.app/namava";
+			};
+			name = Release;
+		};
+		D41CBCC328608232001337B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A409A23D789B49BE1E785101 /* Pods-namava-namavaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8BYSYKW73;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.namavaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = namava;
+			};
+			name = Debug;
+		};
+		D41CBCC428608232001337B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA7AA099CA80721037F67D04 /* Pods-namava-namavaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P8BYSYKW73;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.namavaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = namava;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D41CBC8D28608231001337B8 /* Build configuration list for PBXProject "namava" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D41CBCBA28608232001337B8 /* Debug */,
+				D41CBCBB28608232001337B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D41CBCBC28608232001337B8 /* Build configuration list for PBXNativeTarget "namava" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D41CBCBD28608232001337B8 /* Debug */,
+				D41CBCBE28608232001337B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D41CBCBF28608232001337B8 /* Build configuration list for PBXNativeTarget "namavaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D41CBCC028608232001337B8 /* Debug */,
+				D41CBCC128608232001337B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D41CBCC228608232001337B8 /* Build configuration list for PBXNativeTarget "namavaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D41CBCC328608232001337B8 /* Debug */,
+				D41CBCC428608232001337B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41CBC8A28608231001337B8 /* Project object */;
+}
